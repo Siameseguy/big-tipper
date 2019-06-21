@@ -16,9 +16,7 @@ class TipForm extends Component {
   calcTip(percent, people) {
     // take total and subtract tip percentage
     const split = this.state.amount / people
-    console.log('split', parseFloat(split).toFixed(2));
     const tip = split * percent;
-    console.log('tip', tip)
     const total = parseInt(split) + tip;
 
     this.setState({
